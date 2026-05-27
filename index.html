@@ -20,14 +20,38 @@
 
 				<!-- Header -->
 					<header id="header">
-						<div class="logo">
-							<span class="icon fas fa-seedling"></span>
-						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>Gabriel Zanella</h1>
-								<p>Mental health services</p>
-								<p></p>Evidence-based support delivered with care, for adults and expats worldwide.</p>
+								<div style="display:flex; align-items:center; justify-content:center; gap:24px;">
+									<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="50" cy="50" r="8" fill="#e8d0e8">
+											<animate attributeName="r" values="7;9;7" dur="3s" repeatCount="indefinite" begin="0s"/>
+											<animate attributeName="opacity" values="1;0.8;1" dur="3s" repeatCount="indefinite" begin="0s"/>
+										</circle>
+										<circle cx="50" cy="50" r="20" fill="none" stroke="#e8d0e8" stroke-width="1.2">
+											<animate attributeName="r" values="18;22;18" dur="3s" repeatCount="indefinite" begin="0.3s"/>
+											<animate attributeName="stroke-width" values="1.5;0.8;1.5" dur="3s" repeatCount="indefinite" begin="0.3s"/>
+											<animate attributeName="opacity" values="0.65;0.4;0.65" dur="3s" repeatCount="indefinite" begin="0.3s"/>
+										</circle>
+										<circle cx="50" cy="50" r="32" fill="none" stroke="#e8d0e8" stroke-width="0.9">
+											<animate attributeName="r" values="29;34;29" dur="3s" repeatCount="indefinite" begin="0.6s"/>
+											<animate attributeName="stroke-width" values="1.2;0.6;1.2" dur="3s" repeatCount="indefinite" begin="0.6s"/>
+											<animate attributeName="opacity" values="0.35;0.2;0.35" dur="3s" repeatCount="indefinite" begin="0.6s"/>
+										</circle>
+										<circle cx="50" cy="50" r="44" fill="none" stroke="#e8d0e8" stroke-width="0.6">
+											<animate attributeName="r" values="40;46;40" dur="3s" repeatCount="indefinite" begin="0.9s"/>
+											<animate attributeName="stroke-width" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite" begin="0.9s"/>
+											<animate attributeName="opacity" values="0.15;0.08;0.15" dur="3s" repeatCount="indefinite" begin="0.9s"/>
+										</circle>
+									</svg>
+									<div style="display:flex; flex-direction:column; gap:0; text-align:left;">
+										<span style="font-family:'Helvetica Neue',Arial,sans-serif; font-size:22px; font-weight:300; letter-spacing:4px; color:#f0e0f0; line-height:1.1;">GABRIEL ZANELLA</span>
+										<div style="height:0.5px; background:rgba(255,255,255,0.35); margin:6px 0;"></div>
+										<span style="font-family:'Helvetica Neue',Arial,sans-serif; font-size:10px; font-weight:400; letter-spacing:3.5px; color:#d4b8cc; line-height:1.1;">MENTAL HEALTH SERVICES</span>
+									</div>
+								</div>
+								<p style="margin-top:2em; font-family:'Helvetica Neue',Arial,sans-serif; font-weight:300; letter-spacing:1px; font-size:0.75em; text-transform:none !important;">Evidence-based support delivered with care,<br />for adults and expats worldwide.</p>
+
 							</div>
 						</div>
 						<nav>
@@ -36,7 +60,6 @@
 								<li><a href="#Services">Services</a></li>
 								<li><a href="#Fees">Fees</a></li>
 								<li><a href="#Contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
 					</header>
@@ -47,11 +70,16 @@
 						<!-- About -->
 							<article id="About"> 
 								<h2 class="major">About</h2> 
-								<p>I'm Gabriel Zanella, a psychologist based in the Netherlands,
+
+									<div style="width:100%; margin-bottom:2em; overflow:hidden; border-radius:6px;">
+    									<img src="images/gabriel.png" alt="Gabriel Zanella" 
+   										 style="width:100%; height:280px; object-fit:cover; object-position:center top; display:block; border-radius:6px;" />
+									</div>
+								<p>Hi! I'm Gabriel Zanella, a psychologist based in the Netherlands,
 									working online with expats, adults, neurodivergents and LGBTQ+ individuals 
 									navigating life's challenges.</p>
 									<p>Sessions are held entirely online, in English or Brazilian Portuguese.</p>
-									 <p>My work draws on Cognitive Bheavioural Ttherapy (CBT), Acceptance and Commitment Therapy (ACT), and 
+									 <p>My work draws on Cognitive Behavioural Therapy (CBT), Acceptance and Commitment Therapy (ACT), and 
 										Schema Therapy — approaches I use collaboratively, tailored to each person.</p>
 										 <h3>Education & Training</h3>
 										 <ul>
@@ -133,51 +161,57 @@
 						<!-- Contact -->
 							
 						
-						<article id="contact">
-						<h2 class="major">Contact</h2>
-						<p>Get in touch to book a meeting or ask any questions. 
-						I aim to respond within 2 business days.</p>
+						<article id="Contact">
+							<h2 class="major">Contact</h2>
+							<p>Get in touch via email or form below to ask any questions.
+							I aim to respond within 2 business days.</p>
 
-						<a href="mailto:contact@gabrielzanella.com" 
-						class="button primary">contact@gabrielzanella.com</a>
+							<a href="mailto:contact@gabrielzanella.com" class="button">contact@gabrielzanella.com</a>
 
-						<h3>Book a free intake call</h3>
-						<p>Not sure if we're a good fit? Book a free 30-minute call — 
-						no commitment required.</p>
-						<a href="#" class="button">Book a free call</a>
-
-						<h3>Send a message</h3>
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field half">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
-								</div>
-								<div class="field half">
-									<label for="email">Email</label>
-									<input type="email" name="email" id="email" />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="4"></textarea>
-								</div>
-							</div>
-							<ul class="actions">
-								<li><input type="submit" value="Send message" 
-								class="primary" /></li>
-								<li><input type="reset" value="Clear" /></li>
+							<ul class="icons" style="margin-top:1.5em;">
+								<li>
+									<a href="https://www.linkedin.com/in/zanellagabriel/" class="icon brands fa-linkedin" target="_blank">
+										<span class="label">LinkedIn</span>
+									</a>
+								</li>
+								<li>
+									<a href="https://orcid.org/0009-0002-2499-6159" class="icon brands fa-orcid" target="_blank">
+										<span class="label">ORCID</span>
+									</a>
+								</li>
 							</ul>
-						</form>
 
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/zanellagabriel/" 
-							class="icon brands fa-linkedin" 
-							target="_blank"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://orcid.org/0009-0002-2499-6159" 
-							class="icon brands fa-orcid" 
-							target="_blank"><span class="label">ORCID</span></a></li>
-						</ul>
-					</article>
+							<hr style="border:none; border-top:0.5px solid rgba(255,255,255,0.15); margin:2em 0;" />
+
+							<h3>Book a free intake call</h3>
+							<p>Not sure if we're a good fit? Book a free 30-minute call —
+							no commitment required.</p>
+							<a href="https://calendly.com/gabrielzanella/intake" class="button" target="_blank">Book a free call</a>
+
+							<hr style="border:none; border-top:0.5px solid rgba(255,255,255,0.15); margin:2em 0;" />
+
+							<h3>Send a message</h3>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send message" class="primary" /></li>
+									<li><input type="reset" value="Clear" /></li>
+								</ul>
+							</form>
+						</article>
 						
 				
 
