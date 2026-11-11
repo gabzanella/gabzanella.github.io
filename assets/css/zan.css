@@ -16,7 +16,7 @@
 
   --wrap: 1120px;
   --gutter: clamp(20px, 5vw, 48px);
-  --space: clamp(72px, 10vw, 128px);
+  --space: clamp(52px, 6.5vw, 92px);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -98,7 +98,7 @@ p { margin: 0 0 1em; max-width: 64ch; }
   overflow: hidden;
   background: var(--dusk);
   color: var(--mist);
-  padding-bottom: clamp(80px, 12vw, 160px);
+  padding-bottom: clamp(64px, 8vw, 116px);
 }
 
 .hero-bar {
@@ -132,7 +132,7 @@ nav a {
 }
 nav a:hover { color: var(--white); text-decoration: underline; }
 
-.hero-body { position: relative; z-index: 2; padding-top: clamp(56px, 9vw, 120px); }
+.hero-body { position: relative; z-index: 2; padding-top: clamp(40px, 6vw, 84px); }
 .hero-text { max-width: 640px; }
 
 .hero h1 {
@@ -154,9 +154,9 @@ nav a:hover { color: var(--white); text-decoration: underline; }
 .soft {
   position: absolute;
   z-index: 1;
-  width: min(62vw, 720px);
+  width: min(50vw, 600px);
   aspect-ratio: 1;
-  right: max(-14vw, -200px);
+  right: max(-8vw, calc((100vw - 1120px) / 2 - 150px));
   top: 50%;
   transform: translateY(-46%);
   pointer-events: none;
@@ -207,7 +207,7 @@ nav a:hover { color: var(--white); text-decoration: underline; }
 .section { padding: var(--space) 0; }
 .section-tint { background: var(--tint); }
 
-.intro { font-size: 1.15rem; color: var(--slate); margin-bottom: 2.4em; }
+.intro { font-size: 1.15rem; color: var(--slate); margin-bottom: 1.6em; }
 
 .split {
   display: grid;
@@ -283,7 +283,7 @@ nav a:hover { color: var(--white); text-decoration: underline; }
 .approaches dd { margin: 0; color: var(--slate); }
 
 .steps {
-  list-style: none; margin: 2.2em 0 0; padding: 0;
+  list-style: none; margin: 1.4em 0 0; padding: 0;
   counter-reset: step;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -335,7 +335,7 @@ nav a:hover { color: var(--white); text-decoration: underline; }
   letter-spacing: -0.02em;
   margin-right: 0.35em;
 }
-.fine { margin-top: 32px; }
+.fine { margin-top: 24px; }
 .fine h3 { font-size: 1.05rem; margin: 1.4em 0 0.3em; }
 .fine p { color: var(--slate); font-size: 0.98rem; margin-bottom: 0; }
 
@@ -347,7 +347,7 @@ nav a:hover { color: var(--white); text-decoration: underline; }
 }
 .portrait { margin: 0; position: sticky; top: 32px; }
 .portrait img { border-radius: 200px 200px 20px 20px; width: 100%; height: auto; }
-.about-text h3 { margin: 2em 0 0.7em; }
+.about-text h3 { margin: 1.5em 0 0.6em; }
 .creds { list-style: none; margin: 0; padding: 0; }
 .creds li {
   display: flex; justify-content: space-between; gap: 16px;
@@ -368,12 +368,13 @@ nav a:hover { color: var(--white); text-decoration: underline; }
 }
 .email:hover { color: var(--lilac); }
 .crisis {
-  margin-top: 3.5em;
+  margin-top: 2em;
   padding-top: 1.5em;
   border-top: 1px solid rgba(230, 211, 232, 0.2);
   font-size: 0.92rem;
   color: rgba(230, 211, 232, 0.8);
-  max-width: 60ch;
+  max-width: 780px;
+  text-wrap: balance;
 }
 
 .footer { background: var(--dusk); color: rgba(230, 211, 232, 0.6); font-size: 0.88rem; }
@@ -404,3 +405,7 @@ nav a:hover { color: var(--white); text-decoration: underline; }
 .contact .intro, .contact .crisis { margin-left: auto; margin-right: auto; }
 .contact .actions { justify-content: center; }
 .footer p { margin-left: auto; margin-right: auto; }
+
+/* Tighter end of page */
+.contact { padding-bottom: clamp(40px, 5vw, 64px); }
+.footer .wrap { padding-top: 20px; padding-bottom: 24px; }
