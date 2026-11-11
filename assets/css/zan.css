@@ -318,13 +318,14 @@ nav a:hover { color: var(--white); text-decoration: underline; }
 }
 .fees { margin: 0 0 28px; }
 .fees > div {
-  display: flex; justify-content: space-between; align-items: baseline; gap: 16px;
+  display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
   padding: 0.9em 0;
   border-bottom: 1px solid rgba(43, 34, 51, 0.12);
 }
 .fees > div:first-child { padding-top: 0; }
 .fees dt { font-family: var(--display); font-weight: 700; font-size: 1.15rem; }
-.fees dd { margin: 0; color: var(--slate); text-align: right; white-space: nowrap; }
+.fees dd { margin: 0; color: var(--slate); text-align: right; white-space: nowrap; display: flex; flex-direction: column; align-items: flex-end; }
+.per { font-size: 0.92rem; margin-top: 2px; }
 .fee-note { display: block; font-family: var(--body); font-weight: 400; font-size: 0.92rem; color: var(--slate); margin-top: 2px; }
 .price {
   font-family: var(--display);
@@ -394,6 +395,6 @@ nav a:hover { color: var(--white); text-decoration: underline; }
   .steps { grid-template-columns: 1fr; }
   .soft { width: 130vw; right: -62vw; opacity: 0.35; }
   .fees > div { flex-direction: column; gap: 4px; }
-  .fees dd { text-align: left; }
+  .fees dd { text-align: left; align-items: flex-start; }
 }
-.price:last-child { margin-right: 0; }
+.price { margin-right: 0; line-height: 1; }
