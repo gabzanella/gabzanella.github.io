@@ -118,8 +118,8 @@ p { margin: 0 0 1em; max-width: 64ch; }
   letter-spacing: -0.01em;
 }
 .brand:hover { color: var(--lilac); }
-.brand-mark { width: 34px; height: 34px; }
-.brand-mark circle { stroke: var(--lilac); fill: none; }
+.brand-mark { width: 38px; height: 38px; }
+.brand-mark path, .brand-mark circle { stroke: var(--lilac); fill: none; }
 .brand-mark .core { fill: rgba(230, 211, 232, 0.16); }
 .brand-mark .dot { fill: var(--lilac); stroke: none; }
 
