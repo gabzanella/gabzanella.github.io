@@ -398,3 +398,9 @@ nav a:hover { color: var(--white); text-decoration: underline; }
   .fees dd { text-align: left; align-items: flex-start; }
 }
 .price { margin-right: 0; line-height: 1; }
+
+/* Contact and footer: centred */
+.contact .wrap, .footer .wrap { text-align: center; }
+.contact .intro, .contact .crisis { margin-left: auto; margin-right: auto; }
+.contact .actions { justify-content: center; }
+.footer p { margin-left: auto; margin-right: auto; }
